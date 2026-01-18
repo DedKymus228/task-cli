@@ -70,7 +70,7 @@ func main() {
 	case "help":
 		fmt.Println("\n=== Task Tracker CLI Help ===")
 		fmt.Println("\nUsage:")
-		fmt.Println("  go run main.go <command> [arguments]")
+		fmt.Println("  go run task-cli.go <command> [arguments]")
 
 		fmt.Println("\nAvailable Commands:")
 
@@ -84,9 +84,9 @@ func main() {
 		fmt.Println("  mark-done <id>\tMark a specific task as completed")
 
 		fmt.Println("\nExamples:")
-		fmt.Println("  go run main.go add \"Buy some milk\"")
-		fmt.Println("  go run main.go list done")
-		fmt.Println("  go run main.go update 1 \"Buy milk and bread\"")
+		fmt.Println("  go run task-cli.go add \"Buy some milk\"")
+		fmt.Println("  go run task-cli.go list done")
+		fmt.Println("  go run task-cli.go update 1 \"Buy milk and bread\"")
 
 	default:
 		fmt.Println("no com", command)
